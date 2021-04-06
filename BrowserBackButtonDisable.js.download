@@ -1,0 +1,10 @@
+	//working
+	console.log("JS working");
+	$(document).ready(function() {
+		window.history.pushState(null, "", window.location.href);        
+		window.onpopstate = function() {
+		console.log("window.onpopstate");
+			window.history.pushState(null, "", window.location.href);
+		};
+		
+	});
